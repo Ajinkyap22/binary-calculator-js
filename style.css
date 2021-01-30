@@ -4,24 +4,19 @@ body {
 
 #res {
   background-color: lightgray;
-  border: solid;
+  border: inset;
   height: 48px;
-  font-size: 20px;
+  font-size: 22px;
+  width: 74%;
 }
 
-.buttonContainer{
-  width: 90;
-}
-
-#btn0,
-#btn1 {
-  background-color: lightgreen;
-  color: brown;
+.buttonContainer {
+  width: 75%;
 }
 
 #btnClr,
 #btnEql {
-  background-color: darkgreen;
+  background-color: rgb(0, 81, 255);
   color: white;
 }
 
@@ -29,14 +24,14 @@ body {
 #btnSub,
 #btnMul,
 #btnDiv {
-  background-color: black;
-  color: red;
+  background-color: rgb(255, 153, 0);
+  color: white;
 }
 
 .buttonClass {
   width: 25%;
-  height: 36px;
+  height: 3rem;
   font-size: 18px;
-  margin: 0px;
   float: left;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
