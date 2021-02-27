@@ -1,37 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+html,
 body {
-  width: 33%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.title > * {
+  padding: 5px;
+}
+
+.calculator {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: -225px 0 0 -200px;
+  background-color: #202020;
+  border: 10px solid #202020;
+  border-radius: 5px;
 }
 
 #res {
-  background-color: lightgray;
-  border: inset;
-  height: 48px;
-  font-size: 22px;
-  width: 74%;
+  background-color: #f3f3f3;
+  height: 70px;
+  border: 1px inset black;
+  margin-bottom: 4px;
+  font-size: 42px;
+  text-align: right;
 }
 
 .buttonContainer {
-  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 4px;
+  height: calc(100% - 74px);
 }
 
-#btnClr,
-#btnEql {
-  background-color: rgb(0, 81, 255);
-  color: white;
+button {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
 }
 
-#btnSum,
-#btnSub,
-#btnMul,
-#btnDiv {
-  background-color: rgb(255, 153, 0);
-  color: white;
+button:hover {
+  opacity: 0.85;
+  transition: all 0.4s;
+}
+
+button:active {
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 
 .buttonClass {
-  width: 25%;
-  height: 3rem;
-  font-size: 18px;
-  float: left;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #1f8fff;
+}
+
+#btnEql,
+.numbers {
+  grid-column: span 2;
+}
+
+.operations,
+.displayClass {
+  background-color: #ff8f1f;
+}
+
+#btnClr {
+  background-color: #30d657;
+}
+
+#btnDel {
+  background-color: rgb(243, 85, 50);
+}
+
+footer {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+a {
+  color: red;
 }

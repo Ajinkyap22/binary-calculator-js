@@ -6,17 +6,38 @@
     <title>Binary Calculator</title>
   </head>
   <body>
-    <div id="res"></div>
-    <div id="btns" class="buttonContainer">
-      <button id="btn0" class="buttonClass">0</button>
-      <button id="btn1" class="buttonClass">1</button>
-      <button id="btnClr" class="buttonClass">C</button>
-      <button id="btnEql" class="buttonClass">=</button>
-      <button id="btnSum" class="buttonClass">+</button>
-      <button id="btnSub" class="buttonClass">-</button>
-      <button id="btnMul" class="buttonClass">*</button>
-      <button id="btnDiv" class="buttonClass">/</button>
+    <header class="title">
+      <h1>Binary Calculator</h1>
+      <p>Both Keyboard & Mouse support available</p>
+    </header>
+    <div class="calculator">
+      <div id="res">0</div>
+      <div id="btns" class="buttonContainer">
+        <button id="btn0" class="buttonClass numbers">0</button>
+        <button id="btn1" class="buttonClass numbers">1</button>
+        <button id="btnClr" class="displayClass">AC</button>
+        <button id="btnDel" class="displayClass">DEL</button>
+        <button id="btnEql" class="displayClass">=</button>
+        <button id="btnSum" class="buttonClass operations">+</button>
+        <button id="btnSub" class="buttonClass operations">-</button>
+        <button id="btnMul" class="buttonClass operations">*</button>
+        <button id="btnDiv" class="buttonClass operations">/</button>
+      </div>
     </div>
+    <footer>
+      <p>
+        Built by
+        <a href="https://github.com/Ajinkyap22" target="_blank"
+          >Ajinkya Palaskar</a
+        >
+        |
+        <a
+          href="https://github.com/Ajinkyap22/binary-calculator-js"
+          target="_blank"
+          >Source code</a
+        >
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
